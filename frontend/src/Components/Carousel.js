@@ -12,6 +12,13 @@ import { saveAs } from "file-saver";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 
+
+// KINDLY PUT the assessment name here : 
+
+const assessment_name ="b4472657-76ad-48f6-892a-d42c2a434cf5"
+
+
+
 function Car() {
   const lists = [];
 
@@ -33,7 +40,7 @@ function Car() {
 
   const Save = () => {
     const newList = list.concat({
-      assessment_name: "Hi",
+      assessment_name: assessment_name,
       image_name: "1",
       image_id: currImg + 1,
       date: Date.now(),
@@ -52,7 +59,7 @@ function Car() {
     console.log("Clicked the save button");
 
     const note = {
-      assessment_name: "Hi",
+      assessment_name: assessment_name,
       image_name: "1",
       image_id: currImg,
       date: Date.now(),
